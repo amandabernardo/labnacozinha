@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab na cozinha </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	
+	<center><div class="titulo"><img src="imgs/textgif.gif"></div></center>
+	<div class="grid"> 
+  		<button class="slide_from_bottom" onclick="myFunction('drop1')">MATÉRIAS</button>
+  		<div id="drop1" >
+  			<div class="opcoes">Biologia</div>
+  			<div class="opcoes">Quimica</div>
+  			<div class="opcoes">Fisica</div>
+
+  		</div>
+  		<button class="slide_from_bottom" onclick="myFunction('drop2')">SÉRIES</button>
+  		<div id="drop2" >
+  			<div class="opcoes">6 ano</div>
+  			<div class="opcoes">7 ano</div>
+  			<div class="opcoes">8 ano</div>
+  			<div class="opcoes">9 ano</div>
+  		</div>
+  		<button class="slide_from_bottom" onclick="myFunction('drop3')">EXPERIMENTOS</button>
+  		<div id="drop3" >
+  			<div class="opcoes">Feijão no algodão - 7° ANO</div>
+  			<div class="opcoes">Folhas e flores que mudam - 7° ANO</div>
+  		</div>
+  		<div class="notas"><img id="imgnota" src="imgs/iconelista.png" onclick="myFunction('editor')">
+  			
+	<div id="editor" contenteditable="true">
+				<p>Esse é seu bloco de notas ...</p>
+            </div>
+  		</div>
+  		
+	</div>
+	
+	<script type="text/javascript">
+		
+function myFunction(id) {
+
+	
+  var display =document.getElementById(id).style.display
+
+  if(display=="none"){
+  		document.getElementById(id).style.display ="block"
+  }else{
+  		document.getElementById(id).style.display ="none"
+  }
+}
+
+
+	</script>
+
+</body>
+</html>
